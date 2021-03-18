@@ -1,0 +1,33 @@
+package com.company;
+import java.util.Stack;
+
+public class MyStack {
+
+    Stack<Integer> numbersStack = new Stack<>();
+
+    public  void push(Integer number) {
+        numbersStack.push(number);
+    }
+
+    public  Integer pop()
+    {
+        return  numbersStack.pop();
+    }
+
+    public   Integer peek()
+    {
+        return  numbersStack.peek();
+    }
+
+    public void clear()
+    {
+        numbersStack.clear();
+    }
+
+    public void count()
+    {
+        System.out.println( numbersStack.stream().count());
+    }
+
+
+}
