@@ -1,0 +1,33 @@
+package com.company;
+
+import java.util.ArrayDeque;
+import java.util.Queue;
+
+ public class MyQueue {
+
+     Queue<Integer> Q1 = new ArrayDeque<>();
+
+         public  void enqueue(Integer queue) {
+            Q1.add(queue);
+            //Q1.stream().forEach(System.out::println);
+        }
+
+        public   Integer  dequeue ( )
+        {
+           Integer I= Q1.poll();
+            return  I;
+        }
+
+        public void clear()
+  {
+      Q1.clear();
+  }
+
+         public void count()
+        {
+            System.out.println( Q1.stream().count());
+        }
+
+
+
+}
